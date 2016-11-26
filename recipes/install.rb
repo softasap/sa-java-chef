@@ -1,4 +1,4 @@
-apt_repository 'Java | Add apt repository' do
+apt_repository 'ppa_webupd8team_java' do
   uri          'ppa:webupd8team/java'
 end
 
