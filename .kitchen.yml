@@ -1,6 +1,8 @@
 ---
 driver:
   name: vagrant
+  customize:
+    memory: 1024 
 
 provisioner:
   name: chef_zero
@@ -19,7 +21,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[chef-java::default]
+      - recipe[sa-java::default]
     verifier:
       inspec_tests:
         - test/recipes
